@@ -4,6 +4,22 @@ Takes a YouTube URL in any spoken language and produces an English-dubbed
 version: same video, English audio synced to the original timing, in an
 approximately matching voice.
 
+## Structure
+```
+video_dubbing/
+├── main.py                 # CLI entrypoint — orchestrates all 5 stages
+├── requirements.txt         # All Python dependencies, pinned
+├── README.md                 # Architecture + setup docs
+└── pipeline/
+    ├── __init__.py
+    ├── downloader.py         # Stage 1: yt-dlp download
+    ├── transcriber.py         # Stage 2: faster-whisper transcription
+    ├── translator.py          # Stage 3: NLLB-200 translation
+    ├── synthesizer.py          # Stage 4: edge-tts speech synthesis
+    ├── remixer.py               # Stage 5: ffmpeg audio/video remux
+    └── utils.py                  # Shared helpers (logging, time formatting)
+```
+
 ## Architecture
 
 ```
