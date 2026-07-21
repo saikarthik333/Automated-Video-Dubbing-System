@@ -1,0 +1,24 @@
+# Download
+yt-dlp>=2024.8.6
+
+# Transcription
+faster-whisper>=1.0.3
+
+# Translation
+transformers>=4.42.0
+sentencepiece>=0.2.0
+torch>=2.2.0
+
+# Voice pitch detection (for gender-matched voice selection)
+librosa>=0.10.2
+
+# Synthesis
+edge-tts>=6.1.12
+
+# Audio/video plumbing
+pydub>=0.25.1
+soundfile>=0.12.1
+
+# ffmpeg + ffprobe must also be installed on the system (not a pip package):
+#   macOS:   brew install ffmpeg
+#   Ubuntu:  sudo apt install ffmpeg
