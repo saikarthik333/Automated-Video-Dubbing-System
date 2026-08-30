@@ -120,3 +120,15 @@ elapsed-time stamps.
   can still hit the rate cap and drift slightly out of sync.
 - NLLB-200-distilled-600M is the smaller/faster variant; the 1.3B or 3.3B
   variants would likely improve translation quality at the cost of speed.
+
+
+  ## Author
+
+**Motapothula Sai Karthik**
+
+  * **LinkedIn:** [saikarthik333](https://www.linkedin.com/in/saikarthik333/)
+  * **GitHub:** [saikarthik333](https://github.com/saikarthik333)
+
+## 📄 License
+
+This project is licensed under the MIT License.
